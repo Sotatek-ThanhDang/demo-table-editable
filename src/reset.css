@@ -1,0 +1,4 @@
+.handsontable td,
+.handsontable th {
+  border-inline-end-color: #e5e5e9 !important;
+}
