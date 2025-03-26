@@ -59,7 +59,7 @@ const TableSection: React.FC<TableSectionProps> = ({
         manualColumnResize
         manualRowResize
         manualRowMove
-        afterPaste={(data, coord) => {
+        afterPaste={(_, coord) => {
           const instance = hotRef.current?.hotInstance;
           const { startRow, endRow, startCol } = coord[0];
 
