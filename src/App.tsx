@@ -7,7 +7,8 @@ import ActionButtons from "@/components/page/ActionButtons";
 import { generateRandomData, removeEmptyKeys } from "@/utils/dataUtils";
 import { formSchema, FormValues, DataRow } from "@/types";
 import { HotTableRef } from "@handsontable/react-wrapper";
-import './reset.css'
+import { Analytics } from "@vercel/analytics/react";
+import "./reset.css";
 
 export default function App() {
   const form = useForm<FormValues>({
@@ -77,6 +78,7 @@ export default function App() {
           setEnableSubmit={setEnableSubmit}
         />
       </div>
+      <Analytics />
     </div>
   );
 }
